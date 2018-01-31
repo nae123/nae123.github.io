@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+  <!--HTML HEAD: Metadata about your webpage -->
+  <head>
+    <meta charset="utf-8">
+    <title>MyWebsite</title>
+    <script src="processing.js"></script>
+  </head>
+
+
+
+  <!--HTML BODY: The content in your webpage -->
+  <body>
+
+
+
+
+
+    <!--You can put ANY html you want here -->
+    <h1>This is a heading!</h1>
+
+
+
+
+
+    <!--HTML SCRIPT: Where we will write our ProcessingJS Code -->
+    <script type="text/processing">
+
+	//Image setup: here we set the window size and color
+	void setup() {
+		size(window.innerWidth - 40, window.innerHeight - 50); 	//Use this if you want it to be the wholes screen
+		size(500, 500);						//Use this if you want to make it a custom size 
+    	        background(151, 244, 247);				//Color the background
+	}
+
+	//Declare any variables here:
+	var x = 0;
+
+	//Draw function: runs many times per minute
+	void draw() {
+	    //Use variables to draw something that moves!
+	}
+
+	//Key Pressed function: runs when you press something on your keyboard! 
+	void keyPressed(){
+	   if(key == CODED){
+	        if (keyCode == LEFT){
+		   //Do something
+		}
+		else if (keyCode == RIGHT){
+		   //Do something
+		}
+	    }
+	}
+  
+    </script>
+    <!-- Give our script a UNIQUE canvas id so we can have multiple scripts per page--> 
+    <canvas id="canvasID"></canvas>
+
+
+
+
+  </body>
+</html>
